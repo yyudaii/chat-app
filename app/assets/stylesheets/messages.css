@@ -11,11 +11,39 @@
 .hidariue{
   background-color: #253141;
   height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+.usermei a{
+  background-color: #253141;
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.sakusei a{
+  padding: 14px;
+  font-size: 10px;
+  color: deepskyblue;
+  border: 1px solid lightblue;
+  text-decoration: none;
+
+}
+
+/*wwwwwwwwwwwwwwwwwwwwwwww左下wwwwwwwwwwwwwwwwwwwwwwwwww*/
 .hidarisita{
   background-color: #2f3e51;
   height: calc(100vh - 100px);
+  overflow: scroll;
+}
+.chatto{
+  padding: 20px 0 40px;
+}
 
+.chatto-name a{
+  text-decoration: none;
+  font-size: 16px;
+  color: white;
 }
 
 
