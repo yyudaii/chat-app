@@ -1,7 +1,7 @@
 <div class="migiue">
   <div class="gaiyou">
      <div class="gaiyou-title">
-      概要
+      <%= @room.name %>
     </div>
   </div>
   <div class="syuryou">
@@ -12,20 +12,7 @@
 </div>
 
 <div class="mannaka">
-  <div class="message">
-    <div class="nikki">
-      <div class="namae">Jerry</div>
-      <div class="hiduke">2024/06/11</div>
-    </div>
-    <div class="okimoti">ちわ</div>
-  </div>
-    <div class="message">
-    <div class="nikki">
-      <div class="namae">Tom</div>
-      <div class="hiduke">2024/06/11</div>
-    </div>
-    <div class="okimoti">にゃあ</div>
-  </div>
+  <%= render partial: 'message', collection: @messages %> 
 </div>
 
 <%= form_with model: [@room, @message], html: {class: "migisita"}, local: true do |f|%>
